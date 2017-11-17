@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <title>Data Dashboard</title>
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,900" rel="stylesheet">
     <link rel="stylesheet" href="font/css/font-awesome.min.css">
@@ -11,46 +11,42 @@
   <body>
     <!-- Cabecera con imagen de Laboratoria -->
     <header class="Cabecera">
-      <img src="assets/images/Laboratoria.png" alt="laboratoria">
+      <img class="Laboimg" src="assets/images/Laboratoria.png" alt="laboratoria">
     </header>
     <!-- Barra de navegación Horizontal -->
-    <section>
-      <nav>
-        <h3>Santiago de Chile 2017 - II</h3>
-        <i class="fa fa-angle-down" aria-hidden="true"></i>
-        <ul>
-          <li><a href="#">Overview</a></li>
-          <li><a href="#">Students</a></li>
-          <li><a href="#">Teachers</a></li>
+    <section class="menuH">
+      <h3 class="stgo">Santiago de Chile 2017 - II</h3>
+      <i class="fa fa-angle-down" aria-hidden="true"></i>
+      <nav class="cuadrohorizontal">
+        <ul class="lista1">
+          <li><a class="botones" href="#">Overview</a></li>
+          <li><a class="botones" href="#">Students</a></li>
+          <li><a class="botones" href="#">Teachers</a></li>
         </ul>
       </nav>
     </section>
     <!-- Barra de navegación Vertical -->
-    <section>
-      <h2>Bienvenida</h2>
-      <img src="assets/images/Valentina Perfil.jpg" alt="Perfil">
-      <h4>Valentina Smith</h4>
-      <h3>Ver Perfil</h3>
+    <section class="verticalM">
+      <h2 class="saludo">Bienvenida</h2>
+      <img class="Valentina"src="assets/images/Valentina Perfil.jpg" alt="Perfil">
+      <h4 class="Nombre">Valentina Smith</h4>
+      <h3 class="perfil">Ver Perfil</h3>
       <i class="fa fa-angle-down" aria-hidden="true"></i>
-      <nav>
-        <ul>
-          <li><a href="#">Dashboard</a></li>
+      <nav class="cuadrovertical">
+        <ul class="lista2">
+          <li><a class="dash" href="#">Dashboard</a></li>
           <li>
-            <a href="#">Students</a>
-            <ul>
-              <li>Students</li>
-              <li>Atras</li>
-              <li><a href="#">Add Student</a></li>
-              <li><a href="#">Remove Student</a></li>
+            <a class="estudiante" href="#">Students</a>
+            <ul class="submenu1">
+              <li><a class="agregar1" href="#">Add Student</a></li>
+              <li><a class="eliminar1" href="#">Remove Student</a></li>
             </ul>
           </li>
           <li>
-            <a href="#">Sprints</a>
-            <ul>
-              <li>Sprints</li>
-              <li>Atras</li>
-              <li><a href="#">Add Sprint</a></li>
-              <li><a href="#">Remove Sprint</a></li>
+            <a class="unidad" href="#">Sprints</a>
+            <ul class="submenu2">
+              <li><a class="agregar2" href="#">Add Sprint</a></li>
+              <li><a class="eliminar2" href="#">Remove Sprint</a></li>
             </ul>
           </li>
         </ul>
@@ -70,9 +66,9 @@
     <div id="columnchart_values" style="width: 900px; height: 300px;"></div>
   </div>
 
-
-    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-    <!-- Aquí va tus archivos JS -->
+<!-- Grafico antiguo que se debe borrar-->
+    <!--<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+     Aquí va tus archivos JS -->
 
 		<!-- Base de datos -->
 		<script src="./js/data.js"></script>
