@@ -8,8 +8,163 @@
  }
 body {
   font-family: 'Montserrat', sans-serif;
+  background-color: white;
 }
 
+
+
+
+=======
+/*Imagen de Laboratoria Header*/
+.Laboimg {
+  width: 189px;
+  height: 65px;
+  margin-left: 550px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+/*Menú Horizontal*/
+.verticalM, .menuH {
+  display: inline-block;
+}
+.verticalM {
+  padding: 1px;
+  float: left;
+}
+.menuH {
+  width: 1075px;
+  background-color: #E6E6E6;
+}
+.stgo, .fa-angle-down {
+  font-size: 30px;
+  display: inline-block;
+}
+.stgo {
+  margin-left: 100px;
+  margin-right: 10px;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+.lista1 {
+  list-style: none;
+  padding-bottom: 30px;
+  margin-left: 10px;
+  display: flex;
+}
+.botones {
+  font-weight: bold;
+  color: black;
+  margin-left: 90px;
+  text-decoration: none;
+}
+.botones:hover {
+  color: #F9A91A;
+}
+/*Menú Vertical*/
+.verticalM {
+  background-color: #F9A91A;
+}
+.saludo {
+  font-weight: lighter;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-left: 33px;
+}
+.Valentina {
+  width: 100px;
+  height: 100px;
+  border-radius: 100px;
+  margin-left: 52px;
+}
+.Nombre {
+  font-weight: lighter;
+  text-decoration: underline;
+  margin-left: 37px;
+  margin-bottom: 10px;
+}
+.perfil {
+  font-weight: 300;
+  display: inline;
+  margin-left: 46px;
+}
+.lista2 {
+  list-style: none;
+  margin-top: 20px;
+}
+.dash {
+  border-top: 1px solid #F9A91A;
+}
+.dash, .estudiante, .unidad {
+  background-color: #E6E6E6;
+  color: black;
+  font-size: 20px;
+  font-weight: 200;
+  text-decoration: none;
+  padding: 20px;
+  border-bottom: 1px solid #F9A91A;
+  border-right: none;
+  display: block;
+}
+.dash:hover {
+  background-color: white;
+}
+.estudiante:hover {
+  background-color: white;
+}
+.unidad:hover {
+  background-color: white;
+}
+/*Submenús*/
+.estudiante::after {
+  content: '\f105';
+  color: #A4A4A4;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  float: right;
+}
+.unidad::after{
+  content: '\f105';
+  color: #A4A4A4;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  float: right;
+}
+.submenu1, .submenu2 {
+  list-style: none;
+  background-color: #E6E6E6;
+  color: black;
+  font-size: 20px;
+  font-weight: 200;
+}
+.agregar1, .eliminar1, .agregar2, .eliminar2 {
+  background-color: #E6E6E6;
+  color: black;
+  font-size: 20px;
+  font-weight: 200;
+  text-decoration: none;
+  padding: 20px;
+  border-bottom: 1px solid #F9A91A;
+  border-right: none;
+  display: block;
+}
+.agregar1:hover {
+  background-color: #A4A4A4;
+}
+.eliminar1:hover {
+  background-color: #A4A4A4;
+}
+.agregar2:hover {
+  background-color: #A4A4A4;
+}
+.eliminar2:hover {
+  background-color: #A4A4A4;
+}
 
 /* Acá van los gráficos*/
 
@@ -59,3 +214,5 @@ body {
 	padding-top: 20px;
 	padding-left: 20px;
 }
+
+
