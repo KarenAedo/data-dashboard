@@ -1,6 +1,6 @@
-/*
- * Estilos de tu proyecto
- */
+/* color corporativo laboratoria #F9A91A*/
+
+
 * {
   margin: 0;
   padding: 0;
@@ -9,5 +9,53 @@
 body {
   font-family: 'Montserrat', sans-serif;
 }
-/* color corporativo laboratoria #F9A91A*/
 
+
+/* Acá van los gráficos*/
+
+#data_dashboard{
+
+}
+
+
+/*ǵrafico student satisfaction*/
+#student_satisfaction{
+	width: 300px;
+	height: 300px;
+	border: 1px solid #F9A91A;
+	display: inline-block;
+}
+#student_satisfaction_grafico{
+	width: 285px;
+	height: 200px;
+}
+
+/*ǵrafico teacher rating*/
+#teacher_rating{
+	width: 300px;
+	height: 300px;
+	border: 1px solid #F9A91A;
+	display: inline-block;
+}
+#teacher_rating_grafico{
+	width: 285px;
+	height: 200px;
+}
+
+/*ǵrafico jedi master*/
+#jedi_master_rating{
+	width: 300px;
+	height: 300px;
+	border: 1px solid #F9A91A;
+	display: inline-block;
+}
+#grafico_jedi_master{
+	width: 285px;
+	height: 200px;
+}
+
+.titulo_grafico{
+	font-size: 18px;
+	padding-top: 20px;
+	padding-left: 20px;
+}
