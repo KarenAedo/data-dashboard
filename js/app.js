@@ -1,3 +1,7 @@
+/* hacer ventana oculta de tech skills*/
+
+/* hacer ventana oculta de life skills*/
+
 /* Gráfico STUDENT-SATISFACTION*/
 google.charts.load("current", {packages:['corechart']});
 google.charts.setOnLoadCallback(drawChartStudentSatisfaction);

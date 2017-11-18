@@ -172,6 +172,45 @@ body {
 
 }
 
+/*ǵrafico enrollment*/
+#enrollment{
+	width: 300px;
+	height: 300px;
+	border: 1px solid #F9A91A;
+	display: inline-block;
+}
+
+/*ǵrafico achievement*/
+#achievement{
+	width: 300px;
+	height: 300px;
+	border: 1px solid #F9A91A;
+	display: inline-block;
+}
+
+/*ǵrafico net promoter score*/
+#net_promoter_score{
+	width: 300px;
+	height: 300px;
+	border: 1px solid #F9A91A;
+	display: inline-block;
+}
+
+/*ǵrafico tech skills*/
+#tech_skills{
+	width: 900px;
+	height: 300px;
+	border: 1px solid #F9A91A;
+	display: inline-block;
+}
+
+/*ǵrafico life skills*/
+#life_skills{
+	width: 900px;
+	height: 300px;
+	border: 1px solid #F9A91A;
+	display: inline-block;
+}
 
 /*ǵrafico student satisfaction*/
 #student_satisfaction{
@@ -210,9 +249,7 @@ body {
 }
 
 .titulo_grafico{
-	font-size: 18px;
+	font-size: 16px;
 	padding-top: 20px;
 	padding-left: 20px;
 }
-
-
