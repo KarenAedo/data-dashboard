@@ -10,12 +10,7 @@ body {
   font-family: 'Montserrat', sans-serif;
   background-color: white;
 }
-
-
-
-
-=======
-/*Imagen de Laboratoria Header*/
+/*Imagen de Laboratoria Header (Cuidado de poner signos sin comentarios porque altera el css)*/
 .Laboimg {
   width: 189px;
   height: 65px;
@@ -141,6 +136,7 @@ body {
   color: black;
   font-size: 20px;
   font-weight: 200;
+  /*visibility: hidden;*/
 }
 .agregar1, .eliminar1, .agregar2, .eliminar2 {
   background-color: #E6E6E6;
@@ -153,6 +149,12 @@ body {
   border-right: none;
   display: block;
 }
+/*.lista2 li:hover .submenu1 {
+  visibility: visible;
+}
+.lista2 li:hover .submenu2 {
+  visibility: visible;
+}*/
 .agregar1:hover {
   background-color: #A4A4A4;
 }
