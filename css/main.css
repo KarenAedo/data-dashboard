@@ -25,7 +25,7 @@ body {
   float: left;
 }
 .menuH {
-  width: 1134px;
+  width: 1133px;
   background-color: #E6E6E6;
   position: relative;
 }
@@ -215,25 +215,29 @@ body {
 	height: 350px;
 	border: 1px solid #F9A91A;
 	display: inline-block;
-
 }
-/*	width: 140px;
-	height: 70px;
-	border: 1px solid #F9A91A;
-	display: inline-table;
-
-}*/
-
-/*#dropout{
-	width: 140px;
-	height: 70px;
-	border: 1px solid #F9A91A;
-	display: inline-table;
-
-}*/
+.caja1{
+	width:140px; 
+	height: 65px;
+	text-align: center;
+	display: inline-block;
+	margin-top: 20px;
+	background-color: #F2F2F2;
+	margin-left: 25px;
+}
+.caja2{
+	width: 100px; 
+	height: 65px;
+	text-align: center;
+	display: inline-block;
+	margin-top: 20px;
+	background-color: #F2F2F2;
+	margin-left: 10px;
+	vertical-align: bottom;
+}
 #enrollment_grafico{
-	width: 285px;
-	height: 200px;
+	width: 298px;
+	height: 210px;
 	margin-bottom: 100px;
 }
 
@@ -244,17 +248,24 @@ body {
 	border: 1px solid #F9A91A;
 	display: inline-block;
 }
-
-.titulo_numerico{
+.caja3{
+	width:140px; 
+	height: 65px;
 	text-align: center;
-	font-size: 20px;
-	color: #F9A91A;
-	font-weight: 900;
-	padding-top: 5px;
+	display: inline-block;
+	margin-top: 20px;
+	background-color: #F2F2F2;
+	margin-left: 25px;
 }
-.parrafos{
+.caja4{
+	width: 100px; 
+	height: 65px;
 	text-align: center;
-	font-size: 12px;
+	display: inline-block;
+	margin-top: 20px;
+	background-color: #F2F2F2;
+	margin-left: 10px;
+	vertical-align: bottom;
 }
 
 /* -------------------- net promoter score gráfico --------------------*/
@@ -264,11 +275,31 @@ body {
 	border: 1px solid #F9A91A;
 	display: inline-block;
 }
+.caja5{
+	width:140px; 
+	height: 65px;
+	text-align: center;
+	display: inline-block;
+	margin-top: 20px;
+	background-color: #F2F2F2;
+	margin-left: 25px;
+}
+.caja6{
+	width: 100px; 
+	height: 65px;
+	text-align: center;
+	display: inline-block;
+	margin-top: 20px;
+	padding-top: 10px;
+	background-color: #F2F2F2;
+	margin-left: 10px;
+	vertical-align: bottom;
+}
 
-/* -------------------- tech skills gráfico --------------------*/
+/* -------------------- tech skills caja contenedora --------------------*/
 #tech_skills{
 	width: 908px;
-	height: 500px;
+	height: 700px;
 	border: 1px solid #F9A91A;
   	margin-top: 10px;
   	margin-bottom: 10px;
@@ -281,27 +312,51 @@ body {
 	border: 1px solid #F9A91A;
 	display: none;
 }
-/* -------------------- SEGUNDO GRAFICO TECH SKILL -------------------- */
-
-
-/* -------------------- Life skills gráfico -------------------- */
-/* caja contenedora gráficos life skills*/
-#life_skills{
-	width: 908px;
+.caja7{
+	width:140px; 
+	height: 65px;
+	text-align: center;
+	display: inline-block;
+	margin-top: 20px;
+	background-color: #F2F2F2;
+	margin-left: 25px;
+}
+.caja8{
+	width: 140px; 
+	height: 65px;
+	text-align: center;
+	display: inline-block;
+	margin-top: 20px;
+	padding-top: 10px;
+	background-color: #F2F2F2;
+	margin-left: 10px;
+	vertical-align: bottom;
+}
+/* -------------------- PRIMER GRAFICO TECH SKILL -------------------- */
+#tech_skills_grafico1{
+	width: 600px;
 	height: 500px;
 	border: 1px solid #F9A91A;
   	margin-bottom: 10px;
 	display: inline-block;
 }
-
-#tech_skills_grafico1{
+/* -------------------- SEGUNDO GRAFICO TECH SKILL -------------------- */
+#tech_skills_grafico2{
 	width: 600px;
-	height: 400px;
+	height: 250px;
 	border: 1px solid #F9A91A;
   	margin-bottom: 10px;
 	display: inline-block;
 }
 
+/* -------------------- Life skills caja contenedora -------------------- */
+#life_skills{
+	width: 908px;
+	height: 700px;
+	border: 1px solid #F9A91A;
+  	margin-bottom: 10px;
+	display: inline-block;
+}
 /* cuadro desplegable*/
 #contenedorLifeSkills{
 	width: 300px;
@@ -309,9 +364,42 @@ body {
 	border: 1px solid #F9A91A;
 	display: none;
 }
-
+.caja9{
+	width:140px; 
+	height: 65px;
+	text-align: center;
+	display: inline-block;
+	margin-top: 20px;
+	background-color: #F2F2F2;
+	margin-left: 25px;
+}
+.caja10{
+	width: 140px; 
+	height: 65px;
+	text-align: center;
+	display: inline-block;
+	margin-top: 20px;
+	padding-top: 10px;
+	background-color: #F2F2F2;
+	margin-left: 10px;
+	vertical-align: bottom;
+}
+/* -------------------- PRIMER GRAFICO LIFE SKILL -------------------- */
+#life_skills_grafico1{
+	width: 400px;
+	height: 400px;
+	border: 1px solid #F9A91A;
+  	margin-bottom: 10px;
+	display: inline-block;
+}
 /* -------------------- SEGUNDO GRAFICO LIFE SKILL -------------------- */
-
+#life_skills_grafico2{
+	width: 600px;
+	height: 250px;
+	border: 1px solid #F9A91A;
+  	margin-bottom: 10px;
+	display: inline-block;
+}
 /* -------------------- Gráfico STUDENT-SATISFACTION -------------------- */
 #student_satisfaction{
 	width: 300px;
@@ -366,7 +454,6 @@ body {
 
 }
 .caja13{
-
 	width:150px; 
 	height: 65px;
 	text-align: center;

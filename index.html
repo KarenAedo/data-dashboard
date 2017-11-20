@@ -62,13 +62,13 @@
 <!-- ********************GRAFICO ENROLLMENT******************** -->
       <article id="enrollment">
         <p class="titulo_grafico">ENROLLMENT</p>
-        <div id="caja1">
-          <p class="titulo_caja">120</p> 
+        <div class="caja1">
+          <p class="titulo_caja">58</p> 
           <p class="parrafo_caja">#STUDENTS CURRENTLY<br>ENROLLED</p>
         </div>
         
-        <div id="caja2">
-          <p  class="titulo_caja">20%</p>
+        <div class="caja2">
+          <p  class="titulo_caja">52.2%</p>
           <p class="parrafo_caja">%DROPOUT</p>
         </div>
         <div id="enrollment_grafico"></div>
@@ -76,7 +76,7 @@
 <!-- ********************GRAFICO ACHIEVEMENT******************** -->
       <article id="achievement">
         <p class="titulo_grafico">ACHIEVEMENT</p>
-        <div id="caja3">
+        <div class="caja3">
           <p class="titulo_caja">105</p>
           <p class="parrafo_caja">#STUDENTS THAT MEET<br>THE TARGET</p>
         </div>
@@ -84,7 +84,7 @@
           <p  class="titulo_caja">78%</p>
           <p class="parrafo_caja">%OF TOTAL (135)</p>          
         </div>
-        <div class="achievement_grafico"></div>
+        <div id="achievement_grafico"></div>
       </article>
 <!-- ********************GRAFICO NET PROMOTER SCORE******************** -->
       <article id="net_promoter_score">
@@ -98,11 +98,20 @@
         </div>
         <div id="net_promoter_score_grafico"></div>
       </article>
-<!-- ********************GRAFICO NTECH SKILLS******************** -->
+<!-- ********************GRAFICO TECH SKILLS******************** -->
       <article id="tech_skills">
         <p class="titulo_grafico">TECH SKILLS<input id="techSkillsClick" type="text" placeholder="latest sprints (S1)" onclick="techSkills()"></p>
+        <div class="caja7">
+          <p class="titulo_caja">90%</p>
+          <p class="parrafo_caja">#STUDENTS THAT MEET<br>THE TARGET</p>
+        </div>
+        <div class="caja8">
+          <p class="titulo_caja">62</p>
+          <p class="parrafo_caja">% OF TOTAL (135)</p>
+        </div>
         <div id="tech_skills_grafico1"></div>
         <div id="tech_skills_grafico2"></div>
+        
         <div id="contenedorTechSkills">
           <h5><input type="checkbox">COMMON CORE</h5>
           <hr>
@@ -129,11 +138,20 @@
           </p>
         </div>
       </article>
-
+<!-- ********************GRAFICO LIFE SKILLS******************** -->
       <article id="life_skills">
         <p class="titulo_grafico">LIFE SKILLS<input type="text" placeholder="latest sprints (S1)"></p>
-        <div class="life_skills_grafico1"></div>
-        <div class="life_skills_grafico2"></div>
+        <div class="caja9">
+          <p class="titulo_caja">80%</p>
+          <p class="parrafo_caja">OVERALL CLASS AVERAGE</p>
+        </div>
+        <div class="caja10">
+          <p class="titulo_caja">62</p>
+          <p class="parrafo_caja"># OF STUDENTS THAT MEET THE TARGET</p>
+        </div>        
+        <div id="life_skills_grafico1"></div>
+        <div id="life_skills_grafico2"></div>
+        
         <div id="contenedorLifeSkills">
           <h5><input type="checkbox">HSE</h5>
           <p><input type="checkbox">Sprint 1: Create an interactive site <br>

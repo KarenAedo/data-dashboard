@@ -5,14 +5,16 @@ google.charts.setOnLoadCallback(drawChartEnrollment);
 	function drawChartEnrollment() {
 
         var data = google.visualization.arrayToDataTable([
-          ["Status", 'total', { role: "style" }],
-          ["Enrolled", 26, "#F9A91A"],
-          ["Dropout", 32, "#F2F2F2"]
+          ["Status", "total"],
+          ["Enrolled", 26,],
+          ["Dropout", 32]
         ]);
 
         var options = {
-
-
+        	slices: {
+            0: { color: "#F9A91A"},
+            1: { color: "#A4A4A4"}
+          }
         };
 
         var chart = new google.visualization.PieChart(document.getElementById("enrollment_grafico"));
@@ -85,72 +87,42 @@ function techSkills(){
 }
 
 /* -------------------- tech skills gráfico --------------------*/
-google.charts.load("current", {packages:['corechart']});
+google.charts.load('current', {'packages':['corechart']});
 google.charts.setOnLoadCallback(drawChartTechSkills1);
-	function drawChartTechSkills1() {
-		var data = google.visualization.arrayToDataTable([
-        	["Student", "score", { role: "style" } ], // role:style, para cambiar color de barras
-        	["Donna Sloper", 1143, "#F9A91A"],
-        	["Judy Meindl", 1689, "#F9A91A"],
-        	["Jillene Porch", 1701, "#F9A91A"],
-        	["Sydney Burlingham", 1400, "#F9A91A"],
-        	["Alexi Gindghill", 1113, "#F9A91A"],
-        	["Chiarra Dutton", 1030, "#F9A91A"],
-        	["Jacquelin Beglin", 995, "#F9A91A"],
-        	["'Collette Tubby", 1409, "#F9A91A"],
-        	["Dacey Bullers", 1204, "#F9A91A"],
-        	["Leta Cuel", 987, "#F9A91A"],
-        	["Henrieta Osman", 1640, "#F9A91A"],
-        	["Wilie Dunkinson", 1790, "#F9A91A"],
-        	["Marisa Tumber", 1525, "#F9A91A"],
-        	["Arlina Flacke", 1569, "#F9A91A"],
-			["Modesta Donnison", 1436, "#F9A91A"],
-        	["Arleyne Olding", 1158, "#F9A91A"]
-        	["Adelice Lantiffe", 1227, "#F9A91A"],
-        	["Jacintha Richen", 1602, "#F9A91A"],
-        	["Nanice Ackeroyd", 1561, "#F9A91A"],
-        	["Tricia Meyer", 1346, "#F9A91A"],
-        	["Ellynn Shilleto", 1483, "#F9A91A"],
-        	["Josie Southorn", 910, "#F9A91A"],
-        	["Carlynne Yo", 1502, "#F9A91A"],
-        	["Katharina Ponton", 1768 , "#F9A91A"],
-        	["Hephzibah Poschel", 1591, "#F9A91A"],
-        	["Ericka Carnilian", 1790, "#F9A91A"]
-		]);
+      function drawChartTechSkills1() {
+        // Some raw data (not necessarily accurate)
+        var data = google.visualization.arrayToDataTable([
+         ["Student","Donna Sloper","Judy Meindl","Jillene Porch","Sydney Burlingham","Alexi Gindghill","Chiarra Dutton","Jacquelin Beglin","Collette Tubby","Dacey Bullers","Leta Cuel","Henrieta Osman","Wilie Dunkinson","Marisa Tumber","Arlina Flacke","Modesta Donnison","Arleyne Olding","Adelice Lantiffe","Jacintha Richen","Nanice Ackeroyd","Tricia Meyer","Ellynn Shilleto","Josie Southorn","Carlynne Yo","Katharina Ponton","Hephzibah Poschel","Ericka Carnilian"],
+         ["score",	  1143,      		1689,         1701,             1400,          		 1113,      		1030,		 995,				1409,			1204,			987,			1640,			1790,			1525,			1569,				1436,			1158,				1227,			1602,				1561,			1346,			1483,			910,			1502,				1768,			1591,			  1790	],
+      ]);
 
-		var view = new google.visualization.DataView(data);
-		view.setColumns([0, 1,
-                       { calc: "stringify",
-                         sourceColumn: 1,
-                         type: "string",
-                         role: "annotation" },
-                       2]);
+    var options = {
+      title : 'Monthly Coffee Production by Country',
+      vAxis: {title: 'Cups'},
+      hAxis: {title: 'Month'},
+      seriesType: 'bars',
+      series: {26: {type: 'line'}}
+    };
 
-		var options = {
-        //title: "Density of Precious Metals, in g/cm^3",
-        //width: 600,
-        //height: 400,
-        bar: {groupWidth: "70%"},
-        legend: { position: "none" },
-      };
-      var chart = new google.visualization.ColumnChart(document.getElementById("tech_skills_grafico1"));
-      chart.draw(view, options);
+    var chart = new google.visualization.ComboChart(document.getElementById("tech_skills_grafico1"));
+    chart.draw(data, options);
   }
-
 /* -------------------- SEGUNDO GRAFICO TECH SKILL -------------------- */
 google.charts.load('current', {'packages':['corechart']});
 google.charts.setOnLoadCallback(drawChartTechSkills2);
 
 	function drawChartTechSkills2() {
     	var data = google.visualization.arrayToDataTable([
-          ["Status", 'total', { role: "style" }],
-          ["Enrolled", 26, "#F9A91A"],
-          ["Dropout", 32, "#F2F2F2"]
+          ["Status", "total"],
+          ["# STUDENTS THAT MEET THE TARGET", 17],
+          ["# STUDENTS THAT DON'T MEET THE TARGET", 9]
         ]);
 
         var options = {
-
-
+        	slices: {
+            0: { color: "#F9A91A"},
+            1: { color: "#A4A4A4"}
+          }
         };
 
         var chart = new google.visualization.PieChart(document.getElementById("tech_skills_grafico2"));
@@ -161,77 +133,49 @@ google.charts.setOnLoadCallback(drawChartTechSkills2);
 /* -------------------- hacer ventana oculta de life skills  --------------------*/
 
 /* -------------------- Life skills gráfico -------------------- */
-google.charts.load("current", {packages:['corechart']});
+google.charts.load('current', {'packages':['corechart']});
 google.charts.setOnLoadCallback(drawChartLifeSkills1);
-	function drawChartLifeSkills1() {
-		var data = google.visualization.arrayToDataTable([
-        	["Student", "score", { role: "style" } ], // role:style, para cambiar color de barras
-        	["Donna Sloper", 764, "#F9A91A"],
-        	["Judy Meindl", 1153, "#F9A91A"],
-        	["Jillene Porch", 1004, "#F9A91A"],
-        	["Sydney Burlingham", 648, "#F9A91A"],
-        	["Alexi Gindghill", 1068, "#F9A91A"],
-        	["Chiarra Dutton", 939, "#F9A91A"],
-        	["Jacquelin Beglin", 823, "#F9A91A"],
-        	["'Collette Tubby", 894, "#F9A91A"],
-        	["Dacey Bullers", 1099, "#F9A91A"],
-        	["Leta Cuel", 671, "#F9A91A"],
-        	["Henrieta Osman", 1036, "#F9A91A"],
-        	["Wilie Dunkinson", 927, "#F9A91A"],
-        	["Marisa Tumber", 1154, "#F9A91A"],
-        	["Arlina Flacke", 1029, "#F9A91A"],
-			["Modesta Donnison", 631, "#F9A91A"],
-        	["Arleyne Olding", 1088, "#F9A91A"]
-        	["Adelice Lantiffe", 1093, "#F9A91A"],
-        	["Jacintha Richen", 924, "#F9A91A"],
-        	["Nanice Ackeroyd", 676, "#F9A91A"],
-        	["Tricia Meyer", 1032, "#F9A91A"],
-        	["Ellynn Shilleto", 1197, "#F9A91A"],
-        	["Josie Southorn", 800, "#F9A91A"],
-        	["Carlynne Yo", 649, "#F9A91A"],
-        	["Katharina Ponton", 836 , "#F9A91A"],
-        	["Hephzibah Poschel", 834, "#F9A91A"],
-        	["Ericka Carnilian", 859, "#F9A91A"]
-		]);
+      function drawChartLifeSkills1() {
+        // Some raw data (not necessarily accurate)
+        var data = google.visualization.arrayToDataTable([
+         ["Student","Donna Sloper","Judy Meindl","Jillene Porch","Sydney Burlingham","Alexi Gindghill","Chiarra Dutton","Jacquelin Beglin","Collette Tubby","Dacey Bullers","Leta Cuel","Henrieta Osman","Wilie Dunkinson","Marisa Tumber","Arlina Flacke","Modesta Donnison","Arleyne Olding","Adelice Lantiffe","Jacintha Richen","Nanice Ackeroyd","Tricia Meyer","Ellynn Shilleto","Josie Southorn","Carlynne Yo","Katharina Ponton","Hephzibah Poschel","Ericka Carnilian"],
+         ["score",	  1143,      		1689,         1701,             1400,          		 1113,      		1030,		 995,				1409,			1204,			987,			1640,			1790,			1525,			1569,				1436,			1158,				1227,			1602,				1561,			1346,			1483,			910,			1502,				1768,			1591,			  1790	],
+      ]);
 
-		var view = new google.visualization.DataView(data);
-		view.setColumns([0, 1,
-                       { calc: "stringify",
-                         sourceColumn: 1,
-                         type: "string",
-                         role: "annotation" },
-                       2]);
+    var options = {
+      title : 'Monthly Coffee Production by Country',
+      vAxis: {title: 'Cups'},
+      hAxis: {title: 'Month'},
+      seriesType: 'bars',
+      series: {26: {type: 'line'}}
+    };
 
-		var options = {
-        //title: "Density of Precious Metals, in g/cm^3",
-        //width: 600,
-        //height: 400,
-        bar: {groupWidth: "70%"},
-        legend: { position: "none" },
-      };
-      var chart = new google.visualization.ColumnChart(document.getElementById("life_skills_grafico1"));
-      chart.draw(view, options);
+    var chart = new google.visualization.ComboChart(document.getElementById("life_skills_grafico1"));
+    chart.draw(data, options);
   }
 
 /* -------------------- SEGUNDO GRAFICO LIFE SKILL -------------------- */
-      google.charts.load('current', {'packages':['corechart']});
-      google.charts.setOnLoadCallback(drawChartLifeSkills2);
+google.charts.load('current', {'packages':['corechart']});
+google.charts.setOnLoadCallback(drawChartLifeSkills2);
 
-      function drawChartLifeSkills2() {
-        var data = google.visualization.arrayToDataTable([
-          ["Status", 'total', { role: "style" }],
-          ["Enrolled", 26, "#F9A91A"],
-          ["Dropout", 32, "#F2F2F2"]
+	function drawChartLifeSkills2() {
+    	var data = google.visualization.arrayToDataTable([
+          ["Status", "total"],
+          ["# STUDENTS THAT MEET THE TARGET", 17],
+          ["# STUDENTS THAT DON'T MEET THE TARGET", 9]
         ]);
 
         var options = {
-
-
+        	slices: {
+            0: { color: "#F9A91A"},
+            1: { color: "#A4A4A4"}
+          }
         };
 
         var chart = new google.visualization.PieChart(document.getElementById("life_skills_grafico2"));
         chart.draw(data, options);
       }
+
 
 /* -------------------- Gráfico STUDENT-SATISFACTION -------------------- */
 google.charts.load("current", {packages:['corechart']});
