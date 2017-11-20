@@ -14,7 +14,7 @@ body {
 .Laboimg {
   width: 189px;
   height: 65px;
-  margin-left: 550px;
+  margin-left: 567px;
   margin-top: 10px;
   margin-bottom: 10px;
 }
@@ -115,6 +115,24 @@ body {
   background-color: white;
 }
 /*Submenús*/
+.lista2 li a {
+	text-decoration: none;
+	display:block;
+}
+.lista2 li ul {
+	display: none;
+	position: absolute;
+	min-width: 140px;
+  border: 1px solid #F9A91A;
+}
+.lista2 li:hover > ul {
+	display: block;
+}
+.lista2 li ul li {
+  padding-left: 100px;
+  margin-top: 0px;
+	position: relative;
+}
 .estudiante::after {
   content: '\f105';
   color: #A4A4A4;
@@ -265,4 +283,40 @@ body {
 	font-size: 16px;
 	padding-top: 20px;
 	padding-left: 20px;
+}
+
+/*Página HTML Estudiantes*/
+.verticalM, .cuadrotext {
+  display: inline-block;
+}
+.checkbox {
+  width: 300px;
+  border: 1px solid black;
+  padding: 30px;
+  margin-top: 20px;
+  margin-left: 400px;
+}
+.especializacion {
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+.Images {
+  margin-left: 316px;
+}
+.busc {
+  width: 450px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #F9A91A;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 148px;
+  outline-color: #F9A91A;
+}
+.fa-search {
+  font-size: 20px;
+  color: #F9A91A;
+  cursor: pointer;
 }
