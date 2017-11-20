@@ -115,6 +115,24 @@ body {
   background-color: white;
 }
 /*Submenús*/
+.lista2 li a {
+	text-decoration: none;
+	display:block;
+}
+.lista2 li ul {
+	display: none;
+	position: absolute;
+	min-width: 140px;
+  border: 1px solid #F9A91A;
+}
+.lista2 li:hover > ul {
+	display: block;
+}
+.lista2 li ul li {
+  padding-left: 100px;
+  margin-top: 0px;
+	position: relative;
+}
 .estudiante::after {
   content: '\f105';
   color: #A4A4A4;
