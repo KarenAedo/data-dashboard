@@ -58,30 +58,46 @@
 
     <!-- Aquí va el data-dashboard -->
     <section id="data_dashboard">
-
+<!-- ********************GRAFICO ENROLLMENT******************** -->
       <article id="enrollment">
         <p class="titulo_grafico">ENROLLMENT</p>
-        <div id="enrolled">
-         <!-- <p class="titulo_numerico">120</p> -->
-         <!-- <p class="parrafos">#STUDENTS CURRENTLY ENROLLED</p> -->
+        <div id="caja1">
+          <p class="titulo_caja">120</p> 
+          <p class="parrafo_caja">#STUDENTS CURRENTLY<br>ENROLLED</p>
         </div>
-        <div id="dropout">
-          <!-- <p class="titulo_numerico">20%</p> -->
-          <!-- <p class="parrafos">%DROPOUT</p> -->
+        
+        <div id="caja2">
+          <p  class="titulo_caja">20%</p>
+          <p class="parrafo_caja">%DROPOUT</p>
         </div>
         <div id="enrollment_grafico"></div>
       </article>
-
+<!-- ********************GRAFICO ACHIEVEMENT******************** -->
       <article id="achievement">
         <p class="titulo_grafico">ACHIEVEMENT</p>
+        <div id="caja3">
+          <p class="titulo_caja">105</p>
+          <p class="parrafo_caja">#STUDENTS THAT MEET<br>THE TARGET</p>
+        </div>
+        <div class="caja4">
+          <p  class="titulo_caja">78%</p>
+          <p class="parrafo_caja">%OF TOTAL (135)</p>          
+        </div>
         <div class="achievement_grafico"></div>
       </article>
-
+<!-- ********************GRAFICO NET PROMOTER SCORE******************** -->
       <article id="net_promoter_score">
         <p class="titulo_grafico">NET PROMOTER SCORE</p>
+        <div class="caja5">
+          <p class="titulo_caja">78%</p>
+          <p class="parrafo_caja">%CUMULATIVE NPS</p>
+        </div>
+        <div class="caja6">
+          <p class="parrafo_caja">60% Promoters<br>30% Passive<br>10% Detractors</p>
+        </div>
         <div id="net_promoter_score_grafico"></div>
       </article>
-
+<!-- ********************GRAFICO NTECH SKILLS******************** -->
       <article id="tech_skills">
         <p class="titulo_grafico">TECH SKILLS<input id="techSkillsClick" type="text" placeholder="latest sprints (S1)" onclick="techSkills()"></p>
         <div id="tech_skills_grafico1"></div>
@@ -129,22 +145,20 @@
 <!-- ********************GRAFICO STUDENT SATISFACTION******************** -->
       <article id="student_satisfaction">
         <p class="titulo_grafico">STUDENT SATISFACTION</p>
-          <div class="caja11">
-          <p>140<br>
-            %MEETING OR EXCEEDING<br>
-            EXPECTATIONS(CUMULATIVE)
-          </p>
+        <div class="caja11">
+          <p class="titulo_caja">140</p>
+          <p class="parrafo_caja">%MEETING OR EXCEEDING<br>
+            EXPECTATIONS(CUMULATIVE)</p>
         </div>
         <div id="student_satisfaction_grafico"></div>
       </article>
 <!-- ********************GRAFICO TEACHER RATING******************** -->
       <article id="teacher_rating">
         <p class="titulo_grafico">TEACHER RATING</p>
-          <div class="caja12">
-          <p>4.2<br>
-            OVERALL TEACHER RATING<br>
-            (CUMULATIVE)
-          </p>
+        <div class="caja12">
+          <p class="titulo_caja">4.2</p>
+          <p class="parrafo_caja">OVERALL TEACHER RATING<br>
+            (CUMULATIVE)</p>
         </div>
         <div id="teacher_rating_grafico"></div>
       </article>
@@ -152,10 +166,9 @@
       <article id="jedi_master_rating">
         <p class="titulo_grafico">JEDI MASTER RATING</p>
         <div class="caja13">
-          <p>50<br>
-            OVERALL JEDI RATING<br>
-            (CUMULATIVE)
-          </p>
+          <p class="titulo_caja">50<i class="fa fa-caret-up" aria-hidden="true"></i></p>
+          <p class="parrafo_caja">OVERALL JEDI RATING<br>
+            (CUMULATIVE)</p>
         </div>
         <div id="grafico_jedi_master"></div>
       </article>

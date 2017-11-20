@@ -207,16 +207,9 @@ body {
   margin-left: 265px;
 }
 /* -------------------- enrollment gráfico -------------------- */
-#enrollment_grafico{
-	width: 285px;
-	height: 200px;
-	margin-bottom: 100px;
-}
-
-/*ǵrafico enrollment*/
 #enrollment{
 	width: 300px;
-	height: 400px;
+	height: 350px;
 	border: 1px solid #F9A91A;
 	display: inline-block;
 
@@ -235,11 +228,16 @@ body {
 	display: inline-table;
 
 }*/
+#enrollment_grafico{
+	width: 285px;
+	height: 200px;
+	margin-bottom: 100px;
+}
 
 /* -------------------- achievement gráfico -------------------- */
 #achievement{
 	width: 300px;
-	height: 400px;
+	height: 350px;
 	border: 1px solid #F9A91A;
 	display: inline-block;
 }
@@ -259,7 +257,7 @@ body {
 /* -------------------- net promoter score gráfico --------------------*/
 #net_promoter_score{
 	width: 300px;
-	height: 400px;
+	height: 350px;
 	border: 1px solid #F9A91A;
 	display: inline-block;
 }
@@ -314,9 +312,18 @@ body {
 /* -------------------- Gráfico STUDENT-SATISFACTION -------------------- */
 #student_satisfaction{
 	width: 300px;
-	height: 400px;
+	height: 350px;
 	border: 1px solid #F9A91A;
 	display: inline-block;
+}
+.caja11{
+	width:180px; 
+	height: 65px;
+	text-align: center;
+	display: inline-block;
+	margin-top: 20px;
+	background-color: #F2F2F2;
+	margin-left: 25px;
 }
 #student_satisfaction_grafico{
 	width: 285px;
@@ -326,26 +333,58 @@ body {
 /* -------------------- Gráfico TEACHER-RATING -------------------- */
 #teacher_rating{
 	width: 300px;
-	height: 400px;
+	height: 350px;
 	border: 1px solid #F9A91A;
 	display: inline-block;
 }
+.caja12{
+	width:150px; 
+	height: 65px;
+	text-align: center;
+	display: inline-block;
+	margin-top: 20px;
+	background-color: #F2F2F2;
+	margin-left: 25px;
+}
+
 #teacher_rating_grafico{
 	width: 285px;
 	height: 200px;
 }
 
+
 /* -------------------- Gráfico JEDI-RATING -------------------- */
 #jedi_master_rating{
 	width: 300px;
-	height: 400px;
+	height: 350px;
 	border: 1px solid #F9A91A;
 	display: inline-block;
 	margin-bottom: 50px;
+
 }
 .caja13{
-	width:
-	height:
+
+	width:150px; 
+	height: 65px;
+	text-align: center;
+	display: inline-block;
+	margin-top: 20px;
+	background-color: #F2F2F2;
+	margin-left: 25px;
+}
+.titulo_caja{
+	font-size: 20px;
+	font-weight: bold;
+	padding-top: 5px;
+	color: #F9A91A;
+}
+.parrafo_caja{
+	font-size: 10px;
+	padding-bottom: 5px;
+}
+.fa-caret-up{
+	padding-left: 3px;
+
 }
 #grafico_jedi_master{
 	width: 285px;
@@ -356,7 +395,8 @@ body {
 .titulo_grafico{
 	font-size: 16px;
 	padding-top: 20px;
-	padding-left: 20px;
+	padding-left: 25px;
+	font-weight: bold;
 }
 
 /* -------------------- Página HTML Estudiantes -------------------- */
