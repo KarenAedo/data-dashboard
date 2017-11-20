@@ -1,9 +1,90 @@
-/* enrollment gráfico*/
-/* achievement gráfico*/
-/* net promoter score gráfico*/
+/* -------------------- enrollment gráfico -------------------- */
+google.charts.load('current', {'packages':['corechart']});
+google.charts.setOnLoadCallback(drawChartEnrollment);
 
-/* hacer ventana oculta de tech skills*/
-/* tech skills gráfico*/
+	function drawChartEnrollment() {
+
+        var data = google.visualization.arrayToDataTable([
+          ["Status", 'total', { role: "style" }],
+          ["Enrolled", 26, "#F9A91A"],
+          ["Dropout", 32, "#F2F2F2"]
+        ]);
+
+        var options = {
+
+
+        };
+
+        var chart = new google.visualization.PieChart(document.getElementById("enrollment_grafico"));
+        chart.draw(data, options);
+      }
+
+/* -------------------- achievement gráfico -------------------- */
+google.charts.load("current", {packages:['corechart']});
+google.charts.setOnLoadCallback(drawChartAchievement);
+	function drawChartAchievement() {
+		var data = google.visualization.arrayToDataTable([
+        	["Sprints", "score", { role: "style" } ], // role:style, para cambiar color de barras
+        	
+        	["Sprint 1", 4.8, "#F9A91A"],
+        	["Sprint 2", 4.3, "#F9A91A"]
+		]);
+
+		var view = new google.visualization.DataView(data);
+		view.setColumns([0, 1,
+                       { calc: "stringify",
+                         sourceColumn: 1,
+                         type: "string",
+                         role: "annotation" },
+                       2]);
+
+		var options = {
+        //title: "Density of Precious Metals, in g/cm^3",
+        //width: 600,
+        //height: 400,
+        bar: {groupWidth: "70%"},
+        legend: { position: "none" },
+      };
+      var chart = new google.visualization.ColumnChart(document.getElementById("achievement_grafico"));
+      chart.draw(view, options);
+  }
+
+/* -------------------- net promoter score gráfico --------------------*/
+google.charts.load("current", {packages:['corechart']});
+google.charts.setOnLoadCallback(drawChartNetPromoterScore);
+	function drawChartNetPromoterScore() {
+		var data = google.visualization.arrayToDataTable([
+        	["Sprints", "score", { role: "style" } ], // role:style, para cambiar color de barras
+        	
+        	["Sprint 1", 4.8, "#F9A91A"],
+        	["Sprint 2", 4.3, "#F9A91A"]
+		]);
+
+		var view = new google.visualization.DataView(data);
+		view.setColumns([0, 1,
+                       { calc: "stringify",
+                         sourceColumn: 1,
+                         type: "string",
+                         role: "annotation" },
+                       2]);
+
+		var options = {
+        //title: "Density of Precious Metals, in g/cm^3",
+        //width: 600,
+        //height: 400,
+        bar: {groupWidth: "70%"},
+        legend: { position: "none" },
+      };
+      var chart = new google.visualization.ColumnChart(document.getElementById("net_promoter_score_grafico"));
+      chart.draw(view, options);
+  }
+
+/* -------------------- hacer ventana oculta de tech skills -------------------- */
+function techSkills(){
+	var techSkills_hacerClick = document.getElementById("contenedorTechSkills")	
+}
+
+/* -------------------- tech skills gráfico --------------------*/
 google.charts.load("current", {packages:['corechart']});
 google.charts.setOnLoadCallback(drawChartTechSkills1);
 	function drawChartTechSkills1() {
@@ -56,9 +137,30 @@ google.charts.setOnLoadCallback(drawChartTechSkills1);
       chart.draw(view, options);
   }
 
+/* -------------------- SEGUNDO GRAFICO TECH SKILL -------------------- */
+google.charts.load('current', {'packages':['corechart']});
+google.charts.setOnLoadCallback(drawChartTechSkills2);
 
-/* hacer ventana oculta de life skills*/
-/* Life skills gráfico*/
+	function drawChartTechSkills2() {
+    	var data = google.visualization.arrayToDataTable([
+          ["Status", 'total', { role: "style" }],
+          ["Enrolled", 26, "#F9A91A"],
+          ["Dropout", 32, "#F2F2F2"]
+        ]);
+
+        var options = {
+
+
+        };
+
+        var chart = new google.visualization.PieChart(document.getElementById("tech_skills_grafico2"));
+        chart.draw(data, options);
+      }
+
+
+/* -------------------- hacer ventana oculta de life skills  --------------------*/
+
+/* -------------------- Life skills gráfico -------------------- */
 google.charts.load("current", {packages:['corechart']});
 google.charts.setOnLoadCallback(drawChartLifeSkills1);
 	function drawChartLifeSkills1() {
@@ -111,8 +213,27 @@ google.charts.setOnLoadCallback(drawChartLifeSkills1);
       chart.draw(view, options);
   }
 
+/* -------------------- SEGUNDO GRAFICO LIFE SKILL -------------------- */
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChartLifeSkills2);
 
-/* Gráfico STUDENT-SATISFACTION*/
+      function drawChartLifeSkills2() {
+        var data = google.visualization.arrayToDataTable([
+          ["Status", 'total', { role: "style" }],
+          ["Enrolled", 26, "#F9A91A"],
+          ["Dropout", 32, "#F2F2F2"]
+        ]);
+
+        var options = {
+
+
+        };
+
+        var chart = new google.visualization.PieChart(document.getElementById("life_skills_grafico2"));
+        chart.draw(data, options);
+      }
+
+/* -------------------- Gráfico STUDENT-SATISFACTION -------------------- */
 google.charts.load("current", {packages:['corechart']});
 google.charts.setOnLoadCallback(drawChartStudentSatisfaction);
 	function drawChartStudentSatisfaction() {
@@ -143,7 +264,7 @@ google.charts.setOnLoadCallback(drawChartStudentSatisfaction);
   }
 
 
-/* -----Gráfico TEACHER-RATING-----*/
+/* -------------------- Gráfico TEACHER-RATING -------------------- */
 google.charts.load("current", {packages:['corechart']});
 google.charts.setOnLoadCallback(drawChartTeacher);
 	function drawChartTeacher() {
@@ -174,7 +295,7 @@ google.charts.setOnLoadCallback(drawChartTeacher);
   }
 
 
-/* -----Gráfico JEDI-RATING-----*/
+/* -------------------- Gráfico JEDI-RATING -------------------- */
 google.charts.load("current", {packages:['corechart']});
 google.charts.setOnLoadCallback(drawChartJedi);
 	function drawChartJedi() {

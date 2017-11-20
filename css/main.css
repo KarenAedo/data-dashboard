@@ -192,10 +192,16 @@ body {
   background-color: #A4A4A4;
 }
 
-/* ------Acá van los gráficos------ */
+/* -------------------- Acá van los gráficos -------------------- */
 #data_dashboard{
   margin-top: 20px;
   margin-left: 265px;
+}
+/* -------------------- enrollment gráfico -------------------- */
+#enrollment_grafico{
+	width: 285px;
+	height: 200px;
+	margin-bottom: 100px;
 }
 
 /*ǵrafico enrollment*/
@@ -221,7 +227,7 @@ body {
 
 }*/
 
-/*ǵrafico achievement*/
+/* -------------------- achievement gráfico -------------------- */
 #achievement{
 	width: 300px;
 	height: 400px;
@@ -241,7 +247,7 @@ body {
 	font-size: 12px;
 }
 
-/*ǵrafico net promoter score*/
+/* -------------------- net promoter score gráfico --------------------*/
 #net_promoter_score{
 	width: 300px;
 	height: 400px;
@@ -249,7 +255,7 @@ body {
 	display: inline-block;
 }
 
-/*ǵrafico tech skills*/
+/* -------------------- tech skills gráfico --------------------*/
 #tech_skills{
 	width: 908px;
 	height: 500px;
@@ -265,7 +271,10 @@ body {
 	border: 1px solid #F9A91A;
 	display: none;
 }
+/* -------------------- SEGUNDO GRAFICO TECH SKILL -------------------- */
 
+
+/* -------------------- Life skills gráfico -------------------- */
 /* caja contenedora gráficos life skills*/
 #life_skills{
 	width: 908px;
@@ -291,10 +300,12 @@ body {
 	display: none;
 }
 
-/*ǵrafico student satisfaction*/
+/* -------------------- SEGUNDO GRAFICO LIFE SKILL -------------------- */
+
+/* -------------------- Gráfico STUDENT-SATISFACTION -------------------- */
 #student_satisfaction{
 	width: 300px;
-	height: 300px;
+	height: 400px;
 	border: 1px solid #F9A91A;
 	display: inline-block;
 }
@@ -303,10 +314,10 @@ body {
 	height: 200px;
 }
 
-/*ǵrafico teacher rating*/
+/* -------------------- Gráfico TEACHER-RATING -------------------- */
 #teacher_rating{
 	width: 300px;
-	height: 300px;
+	height: 400px;
 	border: 1px solid #F9A91A;
 	display: inline-block;
 }
@@ -315,26 +326,31 @@ body {
 	height: 200px;
 }
 
-/*ǵrafico jedi master*/
+/* -------------------- Gráfico JEDI-RATING -------------------- */
 #jedi_master_rating{
 	width: 300px;
-	height: 300px;
+	height: 400px;
 	border: 1px solid #F9A91A;
 	display: inline-block;
+	margin-bottom: 50px;
+}
+.caja13{
+	width: 
+	height: 
 }
 #grafico_jedi_master{
 	width: 285px;
 	height: 200px;
-	margin-bottom: 100px;
 }
 
+/* -------------------- titulos de gráficos -------------------- */
 .titulo_grafico{
 	font-size: 16px;
 	padding-top: 20px;
 	padding-left: 20px;
 }
 
-/* ------Página HTML Estudiantes------ */
+/* -------------------- Página HTML Estudiantes -------------------- */
 .verticalM, .cuadrotext {
   display: inline-block;
 }
@@ -370,7 +386,7 @@ body {
   cursor: pointer;
 }
 
-/* cuadro alumnas*/
+/* -------------------- cuadro alumnas -------------------- */
 #cuadro_alumnas{
 	width: 700px;
 	height: 200px;
