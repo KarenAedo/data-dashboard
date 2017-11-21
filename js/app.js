@@ -52,8 +52,8 @@ google.charts.setOnLoadCallback(drawChartAchievement);
 		var data = google.visualization.arrayToDataTable([
         	["Sprints", "score", { role: "style" } ], // role:style, para cambiar color de barras
         	
-        	["Sprint 1", 4.8, "#F9A91A"],
-        	["Sprint 2", 4.3, "#F9A91A"]
+        	["Sprint 1", 65.4, "#F9A91A"],
+        	["Sprint 2", 61.5, "#F9A91A"]
 		]);
 
 		var view = new google.visualization.DataView(data);
