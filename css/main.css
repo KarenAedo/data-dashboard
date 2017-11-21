@@ -235,7 +235,7 @@ body {
 /* -------------------- GRAFICO TOTAL ALUMNAS -------------------- */
 #total_alumnas{
 	width: 908px;
-	height: 600px;
+	height: 400px;
 	border: 1px solid #F9A91A;
   	margin-bottom: 10px;
 	display: inline-block;
@@ -243,7 +243,7 @@ body {
 }
 #grafico_total_alumnas{
 	width: 900px;
-	height: 500px;
+	height: 300px;
 	/*border: 1px solid #F9A91A;*/
   	margin-bottom: 10px;
   	margin-top: 30px;
