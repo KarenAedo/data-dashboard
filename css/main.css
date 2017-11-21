@@ -322,7 +322,7 @@ body {
 /* -------------------- tech skills caja contenedora --------------------*/
 #tech_skills{
 	width: 908px;
-	height: 700px;
+	height: 950px;
 	border: 1px solid #F9A91A;
   margin-top: 10px;
   margin-bottom: 10px;
@@ -357,7 +357,7 @@ body {
 }
 /* -------------------- PRIMER GRAFICO TECH SKILL -------------------- */
 #tech_skills_grafico1{
-	width: 600px;
+	width: 900px;
 	height: 500px;
 	border: 1px solid #F9A91A;
   	margin-bottom: 10px;
@@ -375,7 +375,7 @@ body {
 /* -------------------- Life skills caja contenedora -------------------- */
 #life_skills{
 	width: 908px;
-	height: 700px;
+	height: 850px;
 	border: 1px solid #F9A91A;
   	margin-bottom: 10px;
 	display: inline-block;
@@ -409,7 +409,7 @@ body {
 }
 /* -------------------- PRIMER GRAFICO LIFE SKILL -------------------- */
 #life_skills_grafico1{
-	width: 400px;
+	width: 900px;
 	height: 400px;
 	border: 1px solid #F9A91A;
   	margin-bottom: 10px;

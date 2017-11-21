@@ -97,9 +97,9 @@ google.charts.setOnLoadCallback(drawChartTechSkills1);
       ]);
 
     var options = {
-      title : 'Monthly Coffee Production by Country',
-      vAxis: {title: 'Cups'},
-      hAxis: {title: 'Month'},
+      title : "Tech skills rating",
+      vAxis: {title: 'SCORE'},
+      hAxis: {title: 'STUDENTS'},
       seriesType: 'bars',
       series: {26: {type: 'line'}}
     };
@@ -119,6 +119,7 @@ google.charts.setOnLoadCallback(drawChartTechSkills2);
         ]);
 
         var options = {
+			title : "Global results",        	
         	slices: {
             0: { color: "#F9A91A"},
             1: { color: "#A4A4A4"}
@@ -132,28 +133,28 @@ google.charts.setOnLoadCallback(drawChartTechSkills2);
 
 /* -------------------- hacer ventana oculta de life skills  --------------------*/
 
-/* -------------------- Life skills gráfico -------------------- */
+/* -------------------- PRIMER GRAFICO LIFE SKILL -------------------- */
 google.charts.load('current', {'packages':['corechart']});
 google.charts.setOnLoadCallback(drawChartLifeSkills1);
       function drawChartLifeSkills1() {
         // Some raw data (not necessarily accurate)
         var data = google.visualization.arrayToDataTable([
-         ["Student","Donna Sloper","Judy Meindl","Jillene Porch","Sydney Burlingham","Alexi Gindghill","Chiarra Dutton","Jacquelin Beglin","Collette Tubby","Dacey Bullers","Leta Cuel","Henrieta Osman","Wilie Dunkinson","Marisa Tumber","Arlina Flacke","Modesta Donnison","Arleyne Olding","Adelice Lantiffe","Jacintha Richen","Nanice Ackeroyd","Tricia Meyer","Ellynn Shilleto","Josie Southorn","Carlynne Yo","Katharina Ponton","Hephzibah Poschel","Ericka Carnilian"],
-         ["score",	  1143,      		1689,         1701,             1400,          		 1113,      		1030,		 995,				1409,			1204,			987,			1640,			1790,			1525,			1569,				1436,			1158,				1227,			1602,				1561,			1346,			1483,			910,			1502,				1768,			1591,			  1790	],
+         ["Students","Donna Sloper","Judy Meindl","Jillene Porch","Sydney Burlingham","Alexi Gindghill","Chiarra Dutton","Jacquelin Beglin","Collette Tubby","Dacey Bullers","Leta Cuel","Henrieta Osman","Wilie Dunkinson","Marisa Tumber","Arlina Flacke","Modesta Donnison","Arleyne Olding","Adelice Lantiffe","Jacintha Richen","Nanice Ackeroyd","Tricia Meyer","Ellynn Shilleto","Josie Southorn","Carlynne Yo","Katharina Ponton","Hephzibah Poschel","Ericka Carnilian"],
+         ["Score",	  764,      		1153,         1004,             648,          		 1068,      		939,		 823,				894,			1099,			671,			1036,			927,			1154,			1029,				631,			1088,				1093,			924,				676,			1032,			1197,			800,			649,				836,			834,			  859	]
       ]);
 
     var options = {
-      title : 'Monthly Coffee Production by Country',
-      vAxis: {title: 'Cups'},
-      hAxis: {title: 'Month'},
-      seriesType: 'bars',
+      title : "Life Skill rating",
+      vAxis: {title: "SCORE"},
+      hAxis: {title: "STUDENTS"},
+      seriesType: "bars",
       series: {26: {type: 'line'}}
+
     };
 
     var chart = new google.visualization.ComboChart(document.getElementById("life_skills_grafico1"));
     chart.draw(data, options);
   }
-
 /* -------------------- SEGUNDO GRAFICO LIFE SKILL -------------------- */
 google.charts.load('current', {'packages':['corechart']});
 google.charts.setOnLoadCallback(drawChartLifeSkills2);
@@ -161,11 +162,12 @@ google.charts.setOnLoadCallback(drawChartLifeSkills2);
 	function drawChartLifeSkills2() {
     	var data = google.visualization.arrayToDataTable([
           ["Status", "total"],
-          ["# STUDENTS THAT MEET THE TARGET", 17],
-          ["# STUDENTS THAT DON'T MEET THE TARGET", 9]
+          ["# STUDENTS THAT MEET THE TARGET", 16],
+          ["# STUDENTS THAT DON'T MEET THE TARGET", 10]
         ]);
 
         var options = {
+			title : "Global results",         	
         	slices: {
             0: { color: "#F9A91A"},
             1: { color: "#A4A4A4"}
