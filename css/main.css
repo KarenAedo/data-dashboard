@@ -575,7 +575,6 @@ body {
   margin-right: 10px;
   cursor: pointer;
   float: right;
-
 }
 #foto_perfil_falsa, .especialidad {
   display: inline-block;
@@ -595,4 +594,9 @@ h6 {
 }
 .parte1 {
   margin-left: 15px;
+}
+
+/*Imagen del HTML Sedes*/
+.sede {
+  margin-left: 500px;
 }
