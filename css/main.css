@@ -232,6 +232,25 @@ body {
   margin-top: 20px;
   margin-left: 265px;
 }
+/* -------------------- GRAFICO TOTAL ALUMNAS -------------------- */
+#total_alumnas{
+	width: 908px;
+	height: 600px;
+	border: 1px solid #F9A91A;
+  	margin-bottom: 10px;
+	display: inline-block;
+	border-radius: 5px;
+}
+#grafico_total_alumnas{
+	width: 900px;
+	height: 500px;
+	/*border: 1px solid #F9A91A;*/
+  	margin-bottom: 10px;
+  	margin-top: 30px;
+	display: inline-block;
+	text-align: center;
+}
+
 /* -------------------- enrollment gráfico -------------------- */
 #enrollment{
 	width: 300px;
@@ -239,7 +258,7 @@ body {
 	border: 1px solid #F9A91A;
 	display: inline-block;
 }
-.caja1{
+#caja1{
 	width:140px;
 	height: 65px;
 	text-align: center;
@@ -248,7 +267,7 @@ body {
 	background-color: #F2F2F2;
 	margin-left: 25px;
 }
-.caja2{
+#caja2{
 	width: 100px;
 	height: 65px;
 	text-align: center;
@@ -260,7 +279,7 @@ body {
 }
 #enrollment_grafico{
 	width: 298px;
-	height: 210px;
+	height: 200px;
 	margin-bottom: 100px;
 }
 
@@ -297,6 +316,7 @@ body {
 	height: 350px;
 	border: 1px solid #F9A91A;
 	display: inline-block;
+	vertical-align: bottom
 }
 .caja5{
 	width:140px;
@@ -324,15 +344,16 @@ body {
 	width: 908px;
 	height: 950px;
 	border: 1px solid #F9A91A;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  	margin-top: 10px;
+  	margin-bottom: 10px;
 	display: inline-block;
+	border-radius: 5px;
+}
+#input_tech{
+	margin-left: 10px;
 }
 /* cuadro desplegable*/
-#contenedorTechSkills{
-	width: 300px;
-	height: 500px;
-	border: 1px solid #F9A91A;
+.foto1{
 	display: none;
 }
 .caja7{
@@ -350,7 +371,6 @@ body {
 	text-align: center;
 	display: inline-block;
 	margin-top: 20px;
-	padding-top: 10px;
 	background-color: #F2F2F2;
 	margin-left: 10px;
 	vertical-align: bottom;
@@ -359,7 +379,7 @@ body {
 #tech_skills_grafico1{
 	width: 900px;
 	height: 500px;
-	border: 1px solid #F9A91A;
+	/*border: 1px solid #F9A91A;*/
   	margin-bottom: 10px;
 	display: inline-block;
 }
@@ -370,6 +390,7 @@ body {
 	border: 1px solid #F9A91A;
   	margin-bottom: 10px;
 	display: inline-block;
+	margin-left: 50px;
 }
 
 /* -------------------- Life skills caja contenedora -------------------- */
@@ -379,14 +400,17 @@ body {
 	border: 1px solid #F9A91A;
   	margin-bottom: 10px;
 	display: inline-block;
+	border-radius: 5px;
+}
+
+#input_life{
+	margin-left: 10px;
 }
 /* cuadro desplegable*/
-#contenedorLifeSkills{
-	width: 300px;
-	height: 500px;
-	border: 1px solid #F9A91A;
+.foto2{
 	display: none;
 }
+
 .caja9{
 	width:140px;
 	height: 65px;
@@ -402,7 +426,6 @@ body {
 	text-align: center;
 	display: inline-block;
 	margin-top: 20px;
-	padding-top: 10px;
 	background-color: #F2F2F2;
 	margin-left: 10px;
 	vertical-align: bottom;
@@ -411,7 +434,7 @@ body {
 #life_skills_grafico1{
 	width: 900px;
 	height: 400px;
-	border: 1px solid #F9A91A;
+	/*border: 1px solid #F9A91A;*/
   	margin-bottom: 10px;
 	display: inline-block;
 }
@@ -420,9 +443,12 @@ body {
 	width: 600px;
 	height: 250px;
 	border: 1px solid #F9A91A;
-  margin-bottom: 10px;
+  	margin-bottom: 10px;
+	display: inline-block;
+	margin-left: 50px;
 	display: inline-block;
 }
+
 /* -------------------- Gráfico STUDENT-SATISFACTION -------------------- */
 #student_satisfaction{
 	width: 300px;
@@ -509,6 +535,7 @@ body {
 	font-size: 16px;
 	padding-top: 20px;
 	padding-left: 25px;
+
 	font-weight: bold;
 }
 
@@ -596,7 +623,9 @@ h6 {
   margin-left: 15px;
 }
 
+
 /*Imagen del HTML Sedes*/
 .sede {
   margin-left: 500px;
 }
+

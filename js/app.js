@@ -1,3 +1,27 @@
+/* -------------------- GRAFICO TOTAL ALUMNAS -------------------- */
+google.charts.load('current', {'packages':['corechart']});
+google.charts.setOnLoadCallback(drawChartTotalAlumnas);
+
+      function drawChartTotalAlumnas() {
+        // Some raw data (not necessarily accurate)
+        var data = google.visualization.arrayToDataTable([
+         ['Country', "AQP", "CDMX", 'LIM', 'SCL'],
+         ["2016-2",  6,      0,       15, 	 3],
+         ["2017-1",  8,      8,       12, 	14],
+         ["2017-2",  0,      19,       4,   26]
+      ]);
+
+    var options = {
+      title : "",
+      vAxis: {title: "N° Students"},
+      hAxis: {title: "Country and generation"},
+      seriesType: 'bars',
+      series: {4: {type: 'line'}}
+    };
+
+    var chart = new google.visualization.ComboChart(document.getElementById("grafico_total_alumnas"));
+    chart.draw(data, options);
+  }
 /* -------------------- enrollment gráfico -------------------- */
 google.charts.load('current', {'packages':['corechart']});
 google.charts.setOnLoadCallback(drawChartEnrollment);
@@ -57,9 +81,8 @@ google.charts.setOnLoadCallback(drawChartNetPromoterScore);
 	function drawChartNetPromoterScore() {
 		var data = google.visualization.arrayToDataTable([
         	["Sprints", "score", { role: "style" } ], // role:style, para cambiar color de barras
-        	
-        	["Sprint 1", 4.8, "#F9A91A"],
-        	["Sprint 2", 4.3, "#F9A91A"]
+        	["Sprint 1", 80, "#F9A91A",],
+        	["Sprint 2", 93, "#F9A91A"]
 		]);
 
 		var view = new google.visualization.DataView(data);
@@ -71,9 +94,6 @@ google.charts.setOnLoadCallback(drawChartNetPromoterScore);
                        2]);
 
 		var options = {
-        //title: "Density of Precious Metals, in g/cm^3",
-        //width: 600,
-        //height: 400,
         bar: {groupWidth: "70%"},
         legend: { position: "none" },
       };
@@ -82,9 +102,8 @@ google.charts.setOnLoadCallback(drawChartNetPromoterScore);
   }
 
 /* -------------------- hacer ventana oculta de tech skills -------------------- */
-function techSkills(){
-	var techSkills_hacerClick = document.getElementById("contenedorTechSkills")	
-}
+
+
 
 /* -------------------- tech skills gráfico --------------------*/
 google.charts.load('current', {'packages':['corechart']});
@@ -132,6 +151,7 @@ google.charts.setOnLoadCallback(drawChartTechSkills2);
 
 
 /* -------------------- hacer ventana oculta de life skills  --------------------*/
+
 
 /* -------------------- PRIMER GRAFICO LIFE SKILL -------------------- */
 google.charts.load('current', {'packages':['corechart']});
@@ -184,10 +204,9 @@ google.charts.load("current", {packages:['corechart']});
 google.charts.setOnLoadCallback(drawChartStudentSatisfaction);
 	function drawChartStudentSatisfaction() {
 		var data = google.visualization.arrayToDataTable([
-        	["Sprints", "score", { role: "style" } ], // role:style, para cambiar color de barras
-        	
-        	["Sprint 1", 4.8, "#F9A91A"],
-        	["Sprint 2", 4.3, "#F9A91A"]
+        	["Sprints", "Score satisfaction", { role: "style" } ], // role:style, para cambiar color de barras
+        	["Sprint 1", 97, "#F9A91A"],
+        	["Sprint 2", 98, "#F9A91A"]
 		]);
 
 		var view = new google.visualization.DataView(data);
@@ -199,9 +218,6 @@ google.charts.setOnLoadCallback(drawChartStudentSatisfaction);
                        2]);
 
 		var options = {
-        //title: "Density of Precious Metals, in g/cm^3",
-        //width: 600,
-        //height: 400,
         bar: {groupWidth: "70%"},
         legend: { position: "none" },
       };
@@ -216,7 +232,6 @@ google.charts.setOnLoadCallback(drawChartTeacher);
 	function drawChartTeacher() {
 		var data = google.visualization.arrayToDataTable([
         	["Sprints", "score", { role: "style" } ], // role:style, para cambiar color de barras
-        	
         	["Sprint 1", 4.0, "#F9A91A"],
         	["Sprint 2", 3.9, "#F9A91A"]
 		]);
@@ -230,9 +245,6 @@ google.charts.setOnLoadCallback(drawChartTeacher);
                        2]);
 
 		var options = {
-        //title: "Density of Precious Metals, in g/cm^3",
-        //width: 600,
-        //height: 400,
         bar: {groupWidth: "70%"},
         legend: { position: "none" },
       };
@@ -247,7 +259,6 @@ google.charts.setOnLoadCallback(drawChartJedi);
 	function drawChartJedi() {
 		var data = google.visualization.arrayToDataTable([
         	["Sprints", "score", { role: "style" } ], // role:style, para cambiar color de barras
-        	
         	["Sprint 1", 4.8, "#F9A91A"],
         	["Sprint 2", 4.3, "#F9A91A"]
 		]);
@@ -261,9 +272,6 @@ google.charts.setOnLoadCallback(drawChartJedi);
                        2]);
 
 		var options = {
-        //title: "Density of Precious Metals, in g/cm^3",
-        //width: 600,
-        //height: 400,
         bar: {groupWidth: "70%"},
         legend: { position: "none" },
       };
